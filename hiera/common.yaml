@@ -1,0 +1,4 @@
+boxen::personal::casks:
+  - java
+  - java7
+  - openoffice
