@@ -6,8 +6,8 @@
 
 
 class groups::osiris (
-  $includes          = ['atom', 'boot2docker', 'iterm2::stable', 'keynote', 'mysql', 'python', 'sourcetree', 'sublime_text', 'sqldeveloper', 'tunnelblick', 'virtualbox', 'zsh'],
-  $casks             = ['autodmg', 'cord', 'docker-compose', 'evernote', 'filezilla', 'github', 'mysqlworkbench', 'remote-desktop-manager', 'sequel-pro', 'skitch', 'teamviewer', 'vmware-fusion', 'wireshark'],
+  $includes          = ['atom', 'boot2docker', 'keynote', 'mysql', 'python', 'sourcetree', 'sublime_text', 'sqldeveloper', 'tunnelblick', 'virtualbox', 'zsh'],
+  $casks             = ['autodmg', 'cord', 'docker-compose', 'evernote', 'filezilla', 'github-desktop', 'mysqlworkbench', 'remote-desktop-manager', 'sequel-pro', 'skitch', 'teamviewer', 'vmware-fusion', 'wireshark'],
   $osx_apps          = undef,
   $homebrew_packages = [],
 )
