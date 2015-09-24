@@ -1,15 +1,15 @@
-# Private: For Osiris Personal Config only
+# Private: For Ganesha Personal Config only
 #
 # Usage:
 #
-#   include groups::osiris
+#   include groups::ganesha
 
 
-class groups::osiris (
-  $includes          = ['atom', 'boot2docker', 'keynote', 'mysql', 'python', 'sourcetree', 'sublime_text', 'sqldeveloper', 'tunnelblick', 'virtualbox', 'zsh'],
-  $casks             = ['autodmg', 'cord', 'docker-compose', 'evernote', 'filezilla', 'github-desktop', 'mysqlworkbench', 'remote-desktop-manager', 'sequel-pro', 'skitch', 'teamviewer', 'vmware-fusion', 'wireshark'],
+class groups::ganesha (
+  $includes          = ['cyberduck', 'keynote', 'winzip'],
+  $casks             = ['adobe-reader', 'yemuzip', 'unrarx', 'filezilla' ],
   $osx_apps          = undef,
-  $homebrew_packages = ['siege', 'asciinema'],
+  $homebrew_packages = [],
 )
 {
   include boxen::config

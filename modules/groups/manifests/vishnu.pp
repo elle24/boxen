@@ -1,15 +1,15 @@
-# Private: For Osiris Personal Config only
+# Private: For Vishnu Personal Config only
 #
 # Usage:
 #
-#   include groups::osiris
+#   include groups::vishnu
 
 
-class groups::osiris (
-  $includes          = ['atom', 'boot2docker', 'keynote', 'mysql', 'python', 'sourcetree', 'sublime_text', 'sqldeveloper', 'tunnelblick', 'virtualbox', 'zsh'],
-  $casks             = ['autodmg', 'cord', 'docker-compose', 'evernote', 'filezilla', 'github-desktop', 'mysqlworkbench', 'remote-desktop-manager', 'sequel-pro', 'skitch', 'teamviewer', 'vmware-fusion', 'wireshark'],
+class groups::vishnu (
+  $includes          = ['diffmerge', 'mysql', 'netbeans::jee', 'postgresapp', 'redis', 'solr', 'sourcetree', 'springtoolsuite', 'sqlpowerarchitect', 'sublime_text', 'textwrangler', 'vagrant', 'virtualbox'],
+  $casks             = ['dbvisualizer', 'eclipse-jee', 'jenv', 'mysqlworkbench', 'pgadmin3',  ''],
   $osx_apps          = undef,
-  $homebrew_packages = ['siege', 'asciinema'],
+  $homebrew_packages = ['ant', 'jd-gui', 'groovy', 'maven32', 'tomcat' ],
 )
 {
   include boxen::config
