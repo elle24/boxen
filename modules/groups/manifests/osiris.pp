@@ -6,8 +6,8 @@
 
 
 class groups::osiris (
-  $includes          = ['keynote'],
-  $casks             = ['autodmg', 'cord'],
+  $includes          = ['atom', 'boot2docker', 'iterm2::stable', 'keynote', 'mysql', 'python', 'sourcetree', 'sublime_text', 'sqldeveloper', 'tunnelblick', 'virtualbox', 'zsh'],
+  $casks             = ['autodmg', 'cord', 'docker-compose', 'evernote', 'filezilla', 'github', 'mysqlworkbench', 'remote-desktop-manager', 'sequel-pro', 'skitch', 'teamviewer', 'vmware-fusion', 'wireshark'],
   $osx_apps          = undef,
   $homebrew_packages = [],
 )
@@ -74,9 +74,7 @@ class groups::osiris (
   ## Oh-My-ZSH
   exec { 'install oh-my-zsh plugin':
     command => "curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh",
-    onlyif => [
-      "test ! -d ${home}/.oh-my-zsh"
-    ]
+    unless  => ["test -d /Users/${USER}/.oh-my-zsh"]
   }
 
 }
